@@ -19,4 +19,6 @@ The initial state of the RAM contains a small "boot rom" (see asm/mon.asm). This
 
 However there is currently a bug with this, when you reset the Z80 (PWR button) it should execute the hex loader, however this doesn't seem to happen, I suspect that the boot code is being overwritten, but I haven't worked out whats wrong yet...
 
+TODO
 
+I'd like to turn the boot code into an actual "ROM" and might even use the SDRAM for main & video memory at some point...
