@@ -4,7 +4,7 @@ Yet Another Z80 SoC On FPGA
 
 This has been developed on an ULX3S (45K ECP5)
 
-I took the Z80 soft core from the Galaksija project (https://github.com/emard/galaksija.git) and added my own peripherals, which are all accessed by a number of memory mapped locations
+I took the Z80 soft core from the Galaksija project (https://github.com/emard/galaksija.git) and added various peripherals, which are all accessed by a number of memory mapped locations
 
 * Uart tx and rx (16 byte hardware buffer)
 
