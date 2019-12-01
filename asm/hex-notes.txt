@@ -1,0 +1,29 @@
+only I8HEX supported (only record type 0/1)
+with max 8 bytes per line
+
+can be produced from a binary file
+
+srec_cat -address-length=2 -Output_Block_Size=8 test.bin -Binary -offset 0x0400 -o test.hex -Intel
+
+this takes binary blob test.bin and creates test.hex
+with a start address of 0x0400
+
+
+:       start
+
+08      8 bytes
+
+0000    address
+
+00      record type 0 only type 0/1 supported
+
+F3 C3 00 01 00000000 8 bytes
+
+41 check sum = 8+f3+c3+1 = 1fb = fb
+fb twos compliment(invert bits, +1) = 41
+
+:08000000F3C300010000000041     - full record 27 bytes
+
+.....
+
+:00000001FF     address 0000, 0 bytes, record type 1 (end), check FF

@@ -1,0 +1,19 @@
+read_verilog Z80.v
+read_verilog memory.v
+read_verilog uart.v
+read_verilog tv80_core.v
+read_verilog tv80_mcode.v
+read_verilog tv80_reg.v
+read_verilog tv80_alu.v
+read_verilog tv80n.v
+read_verilog video/charrom.v
+read_verilog video/fake_differential.v
+read_verilog video/vga.v
+read_verilog video/clks.v
+read_verilog video/tmds_encoder.v
+read_verilog video/videoram.v
+read_verilog video/dvi.v
+read_verilog video/vga2dvid.v
+
+
+synth_ecp5 -json Z80.json
